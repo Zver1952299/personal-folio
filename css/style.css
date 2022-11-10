@@ -38,6 +38,7 @@ p {
     height: 100vh;
     min-height: 570px;
     position: relative;
+    overflow: hidden;
 
     background: #000 url("../img/bg.jpg") center no-repeat;
     background-size: cover;
@@ -277,14 +278,21 @@ p {
     
     .page {
         min-height: 100vh;
-        height: auto;
+        height: 570px;
         padding-bottom: 1rem;
     }
 
     .author {
+        right: -140px;
+    }
+}
+
+@media (max-width: 870px) {
+.author {
         display: none;
     }
 }
+
 
 @media (max-width: 767px) {
     
